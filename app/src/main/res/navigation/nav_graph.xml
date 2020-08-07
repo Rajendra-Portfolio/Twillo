@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/RoomFragment">
+
+    <fragment
+        android:id="@+id/RoomFragment"
+        android:name="iamrajendra.github.io.twillovideo.fragment.RoomFragment"
+        android:label="@string/room_fragment"
+        tools:layout="@layout/room_fragment">
+
+        <action
+            android:id="@+id/action_RoomFragment_to_VideoChatFragment"
+            app:destination="@id/VideoChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/VideoChatFragment"
+        android:name="iamrajendra.github.io.twillovideo.fragment.VideoChatFragment"
+        android:label="@string/video_chat_fragment"
+        tools:layout="@layout/video_fragment">
+
+         </fragment>
+</navigation>
